@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>BMI Calculator</h1>
+      <form id="bmiForm">
+        <div class="inch">
+          <label for="inch">inch to cm Converter</label>
+          <input id="inch" placeholder="inch to cm" type="text" />
+          <button id="inchCm" type="submit">Converter</button>
+          <p id="centimeter"></p>
+        </div>
+        <div class="nameValue">
+          <label for="name">Your Name</label>
+          <input id="namee" placeholder="Name" type="text" />
+        </div>
+        <div class="weight">
+          <label for="weight">Weight (kg):</label>
+          <input id="weight" placeholder="weight in KG" type="text" required />
+        </div>
+        <div class="hight">
+          <label for="height">Height (cm):</label>
+          <input id="hight" placeholder="height in cm" type="text" required />
+        </div>
+        <button id="submit" type="submit">Calculate BMI</button>
+      </form>
+      <div class="bmi-score">
+        <h2>BMI Score:</h2>
+        <h2 id="score"></h2>
+      </div>
+      <div class="bmi-guide">
+        <h2>BMI Guide:</h2>
+        <ul>
+          <li>BMI less than 18.5: Underweight</li>
+          <li>BMI between 18.5 and 24.9: Normal weight</li>
+          <li>BMI between 25 and 29.9: Overweight</li>
+          <li>BMI 30 or higher: Obesity</li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2024 BMI Calculator. All rights reserved by
+          <a href="http://mahmudhussain.xyz/" target="_blank">Mahmud Hussain</a>
+        </p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
